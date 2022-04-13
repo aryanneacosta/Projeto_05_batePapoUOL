@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.top {
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 3px 7px rgba(141, 141, 141, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+    height: 48px;
+    margin-left: 22px;
+}
+
+.contatos img {
+    height: 35px;
+    margin-right: 25px;
+}
+
+.content {
+    background-color: #e5e5e5;
+    height: 507px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.bottom {
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 3px -7px rgba(141, 141, 141, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+input {
+    height: 30px;
+    margin-left: 17px;
+    border: none;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.send img {
+    height: 26px;
+    margin-right: 25px;
+}
