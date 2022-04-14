@@ -7,7 +7,7 @@ body {
     height: 80px;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 3px 7px rgba(141, 141, 141, 0.15);
+    box-shadow: 3px 7px 1em rgba(141, 141, 141, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,16 +28,18 @@ body {
 
 .content {
     background-color: #e5e5e5;
-    height: 507px;
     margin-top: 80px;
     margin-bottom: 80px;
+    padding-top: 26px;
+    font-size: 14px;
+    
 }
 
 .bottom {
     height: 80px;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 3px -7px rgba(141, 141, 141, 0.15);
+    box-shadow: 3px -7px 1em rgba(141, 141, 141, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +50,7 @@ body {
 
 input {
     height: 30px;
+    width: 100%;
     margin-left: 17px;
     border: none;
     font-style: italic;
@@ -57,4 +60,58 @@ input {
 .send img {
     height: 26px;
     margin-right: 25px;
+}
+
+/*mensagens - content*/
+
+
+.status {
+    background-color: #dcdcdc;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.private_message {
+    background-color: #ffdede;
+    max-width: 100%;
+    margin-bottom: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messagecontent {
+    width: 95%;
+    word-break: break-all;
+}
+
+.hora {
+    color: #aaaaaa;
+}
+
+.nome {
+    font-weight: bold;
+    color: #000000;
+}
+
+.mensagematual, .statusatual {
+    color: #000000;
 }
