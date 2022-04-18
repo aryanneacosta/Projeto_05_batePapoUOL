@@ -62,7 +62,7 @@ function carregarMensagens(resposta) {
                         <b class="mensagematual">${mensagens[i].text}</b>
                     </div>
                 </div>` ;
-        } else if (mensagens[i].type === "private_message") {
+        } else if (mensagens[i].type === "private_message" && mensagens[i].to === seuNome) {
             conteudo.innerHTML += 
                 `<div class="${mensagens[i].type}">
                     <div class="messagecontent">
@@ -92,7 +92,7 @@ setInterval(verificaConexao, 5000);
 
 function enviarMensagem() {
     let mensagemEnviada = document.querySelector("input").value;
-    console.log(mensagemEnviada);
+    document.querySelector("input").value = "";
     const parametroMensagem = {
         from: seuNome,
         to: "Todos",
@@ -105,5 +105,6 @@ function enviarMensagem() {
     parametroMensagem);
         
         promise.then(buscarMensagens());
-        promise.catch(console.log("deu ruim"));
+        promise.catch(console.log("deu ruim!"));
 }
+
